@@ -1,0 +1,13 @@
+@startuml
+!theme cerulean-outline
+start
+:Process 1;
+while (Decision 1) is (no)
+    :Process 3;
+    -> repeating;
+    #LightGrey:Process 1 (again);
+endwhile (yes)
+:Process 2;
+:Process 4;
+end
+@enduml
